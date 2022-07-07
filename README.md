@@ -7,5 +7,5 @@
 [Optic Flow]()  
 [Visual Odometry]()  
 [Simultaneous Localization And Mappingn (SLAM)]()  
-[Self-driving Cars (Jetbot Project)]()  
+[Self-driving Cars]()  
 [ML applied to VolleyBall]()  
