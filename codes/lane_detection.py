@@ -2,8 +2,6 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import glob
-import scipy.signal
-from scipy.signal import find_peaks
 
 """
  1) Edge detection
