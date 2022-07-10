@@ -11,12 +11,12 @@ import glob
 """
 
 def edge_detection(img, thr = 40):
-  img_hsl = cv2.cvtColor(img[...,::-1], cv2.COLOR_BGR2HLS)
-  _,_,l = cv2.split(img_hsl)
-  edge_vertical = cv2.Sobel(l, cv2.CV_64F, 1, 0, ksize=3)
+  img_hls = cv2.cvtColor(img[...,::-1], cv2.COLOR_BGR2HLS)
+  _,_,s = cv2.split(img_hls)
+  edge_vertical = cv2.Sobel(s, cv2.CV_64F, 1, 0, ksize=3)
   edge_vertical = np.float32(edge_vertical)
 
-  edge_horizontal = cv2.Sobel(l, cv2.CV_64F, 0, 1, ksize=3)
+  edge_horizontal = cv2.Sobel(s, cv2.CV_64F, 0, 1, ksize=3)
   edge_horizontal = np.float32(edge_horizontal)
 
   gradmag = np.sqrt(edge_vertical**2 + edge_horizontal**2) > thr
