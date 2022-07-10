@@ -17,7 +17,7 @@
 
 #### Edge Detection
 
-<p align="justify"> The next step to detect the lanes is to segment the edges on the road. This segmentation was made on a different color space, HSL (for hue, saturation, lightness), and then, we use the Sobel edge detector over the lightness channel and select the edges above a threshold x. 
+<p align="justify"> The next step to detect the lanes is to segment the edges on the road. This segmentation was made on a different color space, HSL (for hue, saturation, lightness), and then, we use the Sobel edge detector over the saturation channel and select the edges above a threshold x. 
 
 <p align="center"> 
 <img src="https://github.com/wallaceloos/Computer_Vision/blob/master/self-driving/images/fig2_lane_detection.png" width="36%" height="36%"> 
